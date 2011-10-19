@@ -7,7 +7,7 @@ class Idea_Validate_PasswordStrength extends Zend_Validate_Abstract
 
 	protected $_messageTemplates = array(
 		self::WEAK_PASSWORD =>
-			'The supplied password should contain at least 10 characters with upper and lower case letters and at least one digit and one special symbol'
+			'A weak password was supplied'
 	);
 
 	public function isValid ($value, $context = null)
@@ -15,7 +15,18 @@ class Idea_Validate_PasswordStrength extends Zend_Validate_Abstract
 
 		$this->_setValue($value);
 
-		$exp = '/^.*(?=.{10,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!"#$%&\'()*+,-./:;<=>?@\[\\\]^_`{|}~]).*$/';
+		$checkLowerCaseChars = '(?=.*[a-z])';
+		$checkUpperCaseChars = '(?=.*[A-Z])';
+		$checkDigits = '(?=.*[\d])';
+		$checkSpecialChars = '(?=.*[!"#$%&\'()*+,-.\/:;<=>?@\[\\\]^_`{|}~])';
+		$checkLength = '(?=.{10,})';
+
+		$exp = '/^.*'
+			. $checkLength
+			. $checkLowerCaseChars
+			. $checkUpperCaseChars
+			. $checkDigits
+			. '.*$/';
 
 		if (!preg_match($exp, $value)) {
 
