@@ -2,7 +2,7 @@
 
 require_once 'Zend/Application/Resource/ResourceAbstract.php';
 
-class Idea_Application_Resource_Twitter
+class Able_Application_Resource_Twitter
 	extends Zend_Application_Resource_ResourceAbstract
 {
 

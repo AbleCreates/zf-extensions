@@ -1,6 +1,6 @@
 <?php
 
-class Idea_Vimeo_Video
+class Able_Vimeo_Video
 {
 
 	const THUMBNAIL_SMALL = 'small';

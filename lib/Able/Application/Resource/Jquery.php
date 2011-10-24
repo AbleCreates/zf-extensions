@@ -1,6 +1,6 @@
 <?php
 
-class Idea_Application_Resource_Jquery
+class Able_Application_Resource_Jquery
 	extends Zend_Application_Resource_ResourceAbstract
 {
 

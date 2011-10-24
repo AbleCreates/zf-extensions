@@ -1,6 +1,6 @@
 <?php
 
-class Idea_Application_Resource_Propel
+class Able_Application_Resource_Propel
 	extends Zend_Application_Resource_ResourceAbstract
 {
 

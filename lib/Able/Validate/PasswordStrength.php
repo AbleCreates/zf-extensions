@@ -1,6 +1,6 @@
 <?php
 
-class Idea_Validate_PasswordStrength extends Zend_Validate_Abstract
+class Able_Validate_PasswordStrength extends Zend_Validate_Abstract
 {
 
 	const WEAK_PASSWORD = 'WeakPassword';

@@ -1,6 +1,6 @@
 <?php
 
-class Idea_Filter_Hash implements Zend_Filter_Interface
+class Able_Filter_Hash implements Zend_Filter_Interface
 {
 
 	const ALGORITHM_SHA256 = 'sha256';

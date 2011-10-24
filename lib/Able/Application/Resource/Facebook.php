@@ -2,7 +2,7 @@
 
 require_once 'Zend/Application/Resource/ResourceAbstract.php';
 
-class Idea_Application_Resource_Facebook
+class Able_Application_Resource_Facebook
 	extends Zend_Application_Resource_ResourceAbstract
 {
 

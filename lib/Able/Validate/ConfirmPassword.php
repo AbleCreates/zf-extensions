@@ -1,6 +1,6 @@
 <?php
 
-class Idea_Validate_ConfirmPassword extends Zend_Validate_Abstract
+class Able_Validate_ConfirmPassword extends Zend_Validate_Abstract
 {
 
 	const PASSWORDS_DO_NOT_MATCH = 'PassDoNotMatch';

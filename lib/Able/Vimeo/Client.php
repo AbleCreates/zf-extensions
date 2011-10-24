@@ -3,7 +3,7 @@
 /** @see Zend_Service_Abstract */
 require_once 'Zend/Service/Abstract.php';
 
-class Idea_Vimeo_Client extends Zend_Service_Abstract
+class Able_Vimeo_Client extends Zend_Service_Abstract
 {
 
 	const BASE_URI = 'http://vimeo.com/api/v2';

@@ -3,7 +3,7 @@
 /** @see Zend_Application_Resource_Router */
 require_once 'Zend/Application/Resource/Router.php';
 
-class Idea_Application_Resource_Router
+class Able_Application_Resource_Router
 	extends Zend_Application_Resource_Router
 {
 
