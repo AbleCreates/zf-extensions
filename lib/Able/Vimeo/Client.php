@@ -38,7 +38,7 @@ class Able_Vimeo_Client extends Zend_Service_Abstract
 
 		foreach ($xml->video as $data) {
 
-			$video = new Idea_Vimeo_Video();
+			$video = new Able_Vimeo_Video();
 			$video->setId((string)$data->id);
 			$video->setTitle((string)$data->title);
 			$video->setDescription((string)$data->description);
