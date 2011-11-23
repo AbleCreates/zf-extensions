@@ -8,6 +8,13 @@ class Able_Form_Bootstrap_Element_Dimensions extends Zend_Form_Element_Xhtml
      */
     public $helper = 'formDimensions';
 
+    public function init()
+    {
+
+        $this->setIsArray(true);
+
+    }
+
     public function loadDefaultDecorators()
     {
 
