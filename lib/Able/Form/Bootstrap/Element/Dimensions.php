@@ -1,19 +1,12 @@
 <?php
 
-class Able_Form_Bootstrap_Element_DateRange extends Zend_Form_Element_Xhtml
+class Able_Form_Bootstrap_Element_Dimensions extends Zend_Form_Element_Xhtml
 {
     /**
      * Default form view helper to use for rendering
      * @var string
      */
-    public $helper = 'formDateRange';
-
-    public function init()
-    {
-
-        $this->setIsArray(true);
-
-    }
+    public $helper = 'formDimensions';
 
     public function loadDefaultDecorators()
     {

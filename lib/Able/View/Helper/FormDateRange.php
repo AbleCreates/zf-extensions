@@ -38,7 +38,7 @@ class Able_View_Helper_FormDateRange extends Zend_View_Helper_FormElement
             $attribs['id'] = $type . '-' . $attribs['id'];
         }
 
-        return $this->view->formText($type . '-' . $name, $value, $attribs);
+        return $this->view->formText($name, $value, $attribs);
 
     }
 
