@@ -33,17 +33,6 @@ class Able_Application_Resource_Facebook
 			channelUrl: '<?php echo $channelUrl ?>'
 		});
 
-		FB.Event.subscribe('auth.sessionChange', function(response) {
-
-		    // logged in and connected user, someone you know
-			var query = FB.Data.query('select uid, name, first_name, last_name, email from user where uid={0}', response.session.uid);
-
-			query.wait(function(rows) {
-				console.log(rows);
-			});
-
-		});
-
 	};
 
 	(function() {
