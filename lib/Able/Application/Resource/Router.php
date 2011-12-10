@@ -35,7 +35,7 @@ class Able_Application_Resource_Router
 				':citySlug.' . $options['baseHostname']
 			);
 
-			$default = new Zend_Rest_Route($frontController);
+			$default = new Zend_Controller_Router_Route_Module();
 
             $this->_router->addRoute('default', $default);
             $this->_router->addConfig($config, 'routes');
@@ -53,13 +53,11 @@ class Able_Application_Resource_Router
         } else {
 
         	$this->_router->addConfig($config, 'routes');
-        	//TODO: update default route
-        	//$default = new Zend_Rest_Route($frontController);
 
         }
 
 		$frontController->setRouter($this->_router);
-		return $this;
+		return $this->_router;
 
     }
 

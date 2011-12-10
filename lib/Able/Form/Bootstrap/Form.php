@@ -1,5 +1,7 @@
 <?php
 
+require_once 'Zend/Form.php';
+
 class Able_Form_Bootstrap_Form extends Zend_Form
 {
 
