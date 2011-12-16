@@ -14,7 +14,9 @@ class Able_Controller_Action_Helper_RestContexts
 
         $controller = $this->getActionController();
 
-        if (!$controller instanceof Able_Controller_Rest) {
+        if (!$controller instanceof Able_Controller_Rest
+            && !$controller instanceof Zend_Rest_Controller
+        ) {
             return;
         }
 
