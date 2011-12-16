@@ -23,11 +23,11 @@ class Able_Controller_Plugin_RestfulRoutes
         $method = strtolower($request->getMethod());
         $id = $request->getParam('id');
 
-        if (strcasecmp($request->getMethod(), Zend_Http_Client::GET)
+        if (strcasecmp($request->getMethod(), Zend_Http_Client::GET) === 0
             && !$id
         ) {
             $method = 'index';
-        } elseif (strcasecmp($request->getMethod(), Zend_Http_Client::POST)
+        } elseif (strcasecmp($request->getMethod(), Zend_Http_Client::POST) === 0
             && $id
         ) {
             $method = 'put';
