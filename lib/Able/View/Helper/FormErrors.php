@@ -24,7 +24,7 @@ class Able_View_Helper_FormErrors extends Zend_View_Helper_FormErrors
         if (!is_array($options)) {
             $options = array();
         }
-
+//print_r($errors);
         $error = array_shift($errors);
         $options['class'] = 'help-inline';
         return parent::formErrors(array($error), $options);
