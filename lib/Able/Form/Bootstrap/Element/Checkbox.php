@@ -14,7 +14,7 @@ class Able_Form_Bootstrap_Element_Checkbox extends Zend_Form_Element_Checkbox
 
         if (empty($decorators)) {
             $this->addDecorator('ViewHelper')
-                 ->addDecorator('Label', array('tag' => 'span'))
+                 ->addDecorator('Label', array('tag' => 'span', 'placement' => 'APPEND'))
                  ->addDecorator('HtmlTag', array('tag' => 'label'))
                  ->addDecorator(
                     array('InputWrapper' => 'HtmlTag'),
