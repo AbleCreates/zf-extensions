@@ -3,8 +3,6 @@
 class Able_Form_Decorator_Label extends Zend_Form_Decorator_Label
 {
 
-    protected $_placement = 'APPEND';
-
     public function render($content)
     {
 
