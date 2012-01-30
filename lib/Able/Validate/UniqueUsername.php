@@ -49,7 +49,7 @@ class Able_Validate_UniqueUsername extends Zend_Validate_Abstract
 	        $value
 	    );
 
-        if ($user instanceof Idea_User) {
+        if ($user) {
             $this->_error(self::INVALID_USERNAME);
             return false;
         }
