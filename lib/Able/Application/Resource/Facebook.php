@@ -19,10 +19,22 @@ class Able_Application_Resource_Facebook
 		}
 
 		$appId = $options['application']['id'];
+		$secret = $options['application']['secret'];
 		$channelUrl = $options['application']['channelUrl'];
+
+		require_once('facebook.php');
+
+		$config = array(
+			'appId' => $appId,
+		    'secret' => $secret,
+		    'fileUpload' => false,
+		);
+
+		$facebook = new Facebook($config);
 
 		$view->inlineScript()->captureStart();
 ?>
+
 	window.fbAsyncInit = function() {
 
 		FB.init({
@@ -50,6 +62,7 @@ class Able_Application_Resource_Facebook
 
 		$view->inlineScript()->captureEnd();
 
+		return $facebook;
 
 	}
 
