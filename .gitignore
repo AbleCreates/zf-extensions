@@ -5,3 +5,8 @@
 .cache
 
 tests/phpunit.xml
+
+# composer files
+vendor/
+composer.lock
+

@@ -1,0 +1,19 @@
+{
+    "name": "AbleCreates/zf-extensions",
+    "description": "Zend Framework 1.x Extensions",
+    "authors": [
+        {
+            "name": "Chris Woodford",
+            "email": "chris@ablecreates.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "suggest": {
+        "zendframework/zendframework1": "The base framework for this library to be used with"
+    },
+    "autoload": {
+        "psr-0": {
+            "Zend": "library/"
+        }
+    }
+}
