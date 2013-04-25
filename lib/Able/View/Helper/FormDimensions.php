@@ -26,9 +26,7 @@ class Able_View_Helper_FormDimensions extends Zend_View_Helper_FormElement
         $h = $this->_createInput('height', $name, $value['height'], $attribs);
         $d = $this->_createInput('depth', $name, $value['depth'], $attribs);
 
-        return 'W ' . $w . '" &nbsp;' . "\n"
-        	. 'H ' . $h . '" &nbsp;' . "\n"
-        	. 'D ' . $d . '" &nbsp;' . "\n";
+        return $this->_displayDimensions($w, $h, $d);
 
     }
 
@@ -40,6 +38,15 @@ class Able_View_Helper_FormDimensions extends Zend_View_Helper_FormElement
         }
 
         return $this->view->formText($name, $value, $attribs);
+
+    }
+
+    protected function _displayDimensions($width, $height, $depth)
+    {
+
+        return 'H ' . $height . '" &nbsp;' . "\n"
+        	. 'W ' . $width . '" &nbsp;' . "\n"
+        	. 'D ' . $depth . '" &nbsp;' . "\n";
 
     }
 
